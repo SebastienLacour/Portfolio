@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+
+        <a href="./index.html">retour à la page d'accueil</a>
+        <h1>Hot Take - Contruction d'une API sécurisée pour une application d'avis gastronomique</h1>
+    </header>
+
+    <main class="main">
+
+        <p class="intro">Ici, le but était de créer une API sécurisée pour faire fonctionner une application d'avis gastronomique. <br />
+            Pour se faire, on a utilisé NodeJs, Express et la base de donnée MongoDB    
+        </p>
+    
+        <p class="description">L'utilisateur s'inscrit ou se connecte à partir de cette page. <br />
+            Elle fonctionne grâce à deux routes POST; une pour l'inscription, et une autre pour la connexion</p>
+        <img src="./images/ProjetN6/Capture d’écran (44).png" alt="" class="img">
+    
+        <p class="description">Sur la page d'accueil, on a la liste de toutes les sauces affichées. Pour l'instant il n'y en a aucune</p>
+        <img src="./images/ProjetN6/Capture d’écran (46).png" alt="" class="img">
+    
+        <p class="description">Ajoutons-en une pour voir ce que sa donne grâce à une route POST qui enregistre les données renseignées par l'utilisateur dans la base de donnée.; <br />
+            Une fois la sauce créée, la base de donné renvoie pour ce produit un id unique
+             Pour pouvoir enregistrer une image dans la base de donnée, on a utilisé Multer
+        </p>
+        <img src="./images/ProjetN6/Capture d’écran (49).png" alt="" class="img">
+    
+        <p class="description">Une fois la sauce enregistrée, elle s'affiche dans la page d'accueil</p>
+        <img src="./images/ProjetN6/Capture d’écran (47).png" alt="" class="img">
+    
+        <p class="description">On peut en enregistrer autant qu'on veut</p>
+        <p class="description">On récupère toutes les sauces enregistrées grâce à une route GET</p>
+        <img src="./images/ProjetN6/Capture d’écran (51).png" alt="" class="img">
+    
+        <p class="description">On peut également récupérer une sauce à la fois grâce à une autre route GET;<br />
+            Celle ci va prendre en paramètre de l'URL l'id du produit en question pour récupérer toutes ses données
+        </p>
+        <img src="./images/ProjetN6/Capture d’écran (48).png" alt="" class="img">
+    
+        <p class="description">A partir de là, n'importe quel utilisateur peut aimer ou non la sauce, mais ne peut le faire qu'une seule fois</p>
+        <img src="./images/ProjetN6/Capture d’écran (50).png" alt="" class="img">
+    </main>
+    <footer class="footer">
+
+    </footer>
+
+</body>
+</html>
